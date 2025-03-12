@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96%; /* #F5F5F5 */
+    --foreground: 0 0% 10%; /* #1A1A1A */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 0 0% 96%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 90%;
+    --radius: 0.5rem;
+
+    /* Custom colors */
+    --primary-blue: 217 91% 53%;
+    --accent-orange: 38 92% 50%;
+    --teal: 187 50% 46%; /* #39a3b1 */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply w-full overflow-x-hidden text-foreground;
+  }
+}
+
+.hero-section {
+  background: #39a3b1;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2FwDMKVMgt31wxOzn0YhK6CZAk4gsc.png")
+    center / cover no-repeat;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #2563eb 0%, #0f4c81 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2FwDMKVMgt31wxOzn0YhK6CZAk4gsc.png")
+    center / cover no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.gradient-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card {
+  background: linear-gradient(135deg, rgba(0, 128, 128, 0.9) 0%, rgba(0, 64, 64, 0.9) 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,31 @@
+<svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="stripes-teal" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#008080" stroke-width="3"/>
+    </pattern>
+    <pattern id="stripes-orange" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#F59E0B" stroke-width="3"/>
+    </pattern>
+    <pattern id="stripes-coral" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#FF6B6B" stroke-width="3"/>
+    </pattern>
+  </defs>
+  
+  {/* Logo Shape */}
+  <g transform="translate(8, 4)">
+    {/* Teal Section */}
+    <path d="M0 16L16 0L32 16L16 16L0 16Z" fill="url(#stripes-teal)"/>
+    
+    {/* Orange Section */}
+    <path d="M16 16L32 16L32 32L16 32L16 16Z" fill="url(#stripes-orange)"/>
+    
+    {/* Coral Section */}
+    <path d="M0 16L16 16L16 32L0 32L0 16Z" fill="url(#stripes-coral)"/>
+  </g>
+  
+  {/* Text */}
+  <text x="50" y="24" font-family="Arial" font-weight="bold" font-size="16" fill="#2563EB">
+    SnB Alliance
+  </text>
+</svg>
+
