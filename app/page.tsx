@@ -4,21 +4,20 @@ import { Check, Users, FileText, Award } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
-async function getHomePageData() {
-  const res = await fetch("http://localhost/wordpress/wp-json/wp/v2/pages/25");
-  if (!res.ok) {
-    throw new Error("Failed to fetch home page data");
-  }
-  return res.json();
-}
+// async function getHomePageData() {
+//   const res = await fetch("http://localhost/wordpress/wp-json/wp/v2/pages/25");
+//   if (!res.ok) {
+//     throw new Error("Failed to fetch home page data");
+//   }
+//   return res.json();
+// }
 
 export default async function HomePage() {
-  const homeData = await getHomePageData();
   return (
     <>
     <Header />
       {/* Hero Section */}
-      {/* <section className="relative overflow-hidden py-20">
+      <section className="relative overflow-hidden py-20">
         <div className="absolute inset-0">
           <Image
             src="/homebanner.png"
@@ -50,14 +49,14 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-      </section> */}
-      <section className="relative w-full overflow-hidden py-20">
-      {/* {homeData.acf.hero_bg_image && (
+      </section>
+      {/* <section className="relative w-full overflow-hidden py-20">
+      {homeData.acf.hero_bg_image && (
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${homeData.acf.hero_bg_image})` }}
         ></div>
-      )} */}
+      )}
 
        <div className="absolute inset-0">
           <Image
@@ -69,7 +68,6 @@ export default async function HomePage() {
           />
           <div className="absolute inset-0 bg-teal-900/30 mix-blend-multiply"></div>
         </div>
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 text-center">
       <h1
       className="text-3xl md:text-5xl font-bold text-[#f8a02e] mb-4"
@@ -87,7 +85,7 @@ export default async function HomePage() {
           </a>
         )}
       </div>
-    </section>
+    </section> */}
 
       {/* What is SNB ALLIANCE? Section */}
       <section className="py-16 bg-white">
