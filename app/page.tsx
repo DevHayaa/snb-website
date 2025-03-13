@@ -20,7 +20,7 @@ export default async function HomePage() {
       <section className="relative overflow-hidden py-20">
         <div className="absolute inset-0">
           <Image
-            src="/homebanner.png"
+            src="/homeBanner.png"
             alt="Abstract geometric background"
             fill
             className="object-cover"
