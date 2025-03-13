@@ -18,40 +18,40 @@ export default function LearningPage() {
         }
       `}</style>
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20">
-        <div className="absolute inset-0">
-          <Image
-            src=""
-            alt="Abstract geometric background"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-teal-900/30 mix-blend-multiply"></div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Empowering Bidding & Recruitment Excellence
-            </h1>
-            <p className="text-xl text-blue-100 mb-10">Flexible Learning Solutions for Individuals & Organizations</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/learning/start"
-                className="px-8 py-4 bg-yellow-500 text-white font-bold rounded-md hover:bg-yellow-400 transition-colors text-lg"
-              >
-                Start Learning
-              </Link>
-              <Link
-                href="/learning/enterprise"
-                className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/30 font-bold rounded-md hover:bg-white/20 transition-colors text-lg"
-              >
-                Enterprise Solutions
-              </Link>
+      <section className="relative overflow-hidden py-20 bg-white md:bg-transparent">
+          <div className="absolute inset-0 hidden md:block">
+            <Image
+              src="/learningBanner.png"
+              alt="Abstract geometric background"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 mix-blend-multiply"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto md:mx-0 text-left">
+              <h2 className="text-5xl md:text-5xl lg:text-3xl font-bold mb-4">
+                Learning at SnB Alliance
+              </h2>
+              <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                Empowering Bidding & Recruitment Excellence
+              </h1>
+              <p className="text-lg md:text-xl text-gray-700 md:text-teal-600 mb-10">
+                Flexible Learning Solutions for Individuals & Organizations
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/learning"
+                  className="px-8 py-4 bg-yellow-500 text-white font-bold rounded-md hover:bg-yellow-400 transition-colors text-lg"
+                >
+                  Start Learning
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
 
       {/* Learning Path Cards */}
       <section className="py-16 bg-white" id="learning-paths">
@@ -63,7 +63,7 @@ export default function LearningPage() {
           </p>
           <div className="relative mb-12 max-w-5xl mx-auto">
             <Image
-              src="/placeholder.svg?height=400&width=1000"
+              src="/learningPathBg.jpg"
               alt="Students collaborating on a learning project"
               width={1000}
               height={400}
@@ -83,7 +83,7 @@ export default function LearningPage() {
       </section>
 
       {/* Interactive Program Showcase */}
-      <section className="py-16 bg-gray-50" id="programs">
+      {/* <section className="py-16 bg-gray-50" id="programs">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">Our Programs</h2>
           <p className="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -129,7 +129,7 @@ export default function LearningPage() {
 
           <ProgramShowcase />
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Visualization */}
       <section className="py-16 bg-white" id="learning-journey">
@@ -139,17 +139,17 @@ export default function LearningPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {/* Step 1 */}
               <div className="relative">
-                <div className="bg-blue-50 rounded-lg p-6 h-full">
-                  <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                <div className="bg-[#d7faff] rounded-lg p-6 h-full">
+                  {/* <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
                     1
-                  </div>
+                  </div> */}
                   <div className="mb-4 rounded-lg overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=120&width=200"
+                      src="/enrollmentIcon.png"
                       alt="Enrollment process"
-                      width={200}
-                      height={120}
-                      className="w-full object-cover"
+                      width={100}
+                      height={70}
+                      className=""
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Enrollment</h3>
@@ -164,17 +164,17 @@ export default function LearningPage() {
 
               {/* Step 2 */}
               <div className="relative">
-                <div className="bg-blue-50 rounded-lg p-6 h-full">
-                  <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                <div className="bg-[#d7faff] rounded-lg p-6 h-full">
+                  {/* <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
                     2
-                  </div>
+                  </div> */}
                   <div className="mb-4 rounded-lg overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=120&width=200"
+                      src="/flexibalIcon.png"
                       alt="Flexible learning options"
-                      width={200}
-                      height={120}
-                      className="w-full object-cover"
+                      width={100}
+                      height={70}
+                      className=""
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Flexible Learning</h3>
@@ -189,17 +189,17 @@ export default function LearningPage() {
 
               {/* Step 3 */}
               <div className="relative">
-                <div className="bg-blue-50 rounded-lg p-6 h-full">
-                  <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                <div className="bg-[#d7faff] rounded-lg p-6 h-full">
+                  {/* <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
                     3
-                  </div>
+                  </div> */}
                   <div className="mb-4 rounded-lg overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=120&width=200"
+                      src="/practicalIcon.png"
                       alt="Practical skills training"
-                      width={200}
-                      height={120}
-                      className="w-full object-cover"
+                      width={100}
+                      height={70}
+                      className=""
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Practical Skills</h3>
@@ -214,17 +214,17 @@ export default function LearningPage() {
 
               {/* Step 4 */}
               <div>
-                <div className="bg-blue-50 rounded-lg p-6 h-full">
-                  <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                <div className="bg-[#d7faff] rounded-lg p-6 h-full">
+                  {/* <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
                     4
-                  </div>
+                  </div> */}
                   <div className="mb-4 rounded-lg overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=120&width=200"
+                      src="/certificationIcon.png"
                       alt="Certification achievement"
-                      width={200}
-                      height={120}
-                      className="w-full object-cover"
+                      width={100}
+                      height={70}
+                      className=""
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Certification</h3>
@@ -236,7 +236,7 @@ export default function LearningPage() {
             </div>
 
             {/* Statistics */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
               <div className="bg-white border border-gray-200 rounded-lg p-6 text-center shadow-sm">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                   <Users className="h-8 w-8 text-blue-600" />
@@ -258,7 +258,7 @@ export default function LearningPage() {
                 <div className="text-4xl font-bold text-blue-600 mb-2">89%</div>
                 <p className="text-gray-700 font-medium">Exam Success Rate</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -276,7 +276,7 @@ export default function LearningPage() {
               <div className="md:flex">
                 <div className="md:w-1/2">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/webinar.png"
                     alt="Featured workshop on advanced bidding strategies"
                     width={600}
                     height={400}
@@ -294,15 +294,7 @@ export default function LearningPage() {
                     help you win more contracts and improve your success rate.
                   </p>
                   <div className="flex items-center mb-6">
-                    <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-                      <Image
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="Sarah Johnson"
-                        width={40}
-                        height={40}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                   
                     <div>
                       <p className="font-medium text-gray-900">Sarah Johnson</p>
                       <p className="text-sm text-gray-600">Senior Bid Manager, Global Procurement Inc.</p>
@@ -310,7 +302,7 @@ export default function LearningPage() {
                   </div>
                   <Link
                     href="/workshops/advanced-bidding-strategies"
-                    className="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
+                    className="inline-flex items-center px-4 py-2 bg-[#39a3b1] text-white font-medium rounded-md hover:bg-[#39a3b1] transition-colors"
                   >
                     Register Now <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -319,12 +311,12 @@ export default function LearningPage() {
             </div>
           </div>
 
-          <WorkshopCalendar />
+          {/* <WorkshopCalendar /> */}
         </div>
       </section>
 
       {/* Comparison Table */}
-      <section className="py-16 bg-white" id="comparison">
+      {/* <section className="py-16 bg-white" id="comparison">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">Program Comparison</h2>
           <p className="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -379,7 +371,7 @@ export default function LearningPage() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonial Carousel */}
       <section className="py-16 bg-gray-50 relative" id="testimonials">
@@ -396,7 +388,7 @@ export default function LearningPage() {
       </section>
 
       {/* Smart Enrollment CTA */}
-      <section className="py-16 relative text-white" id="smart-enrollment">
+      {/* <section className="py-16 relative text-white" id="smart-enrollment">
         <div className="absolute inset-0">
           <Image src="/placeholder.svg?height=600&width=1600" alt="Abstract background" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 opacity-90"></div>
@@ -408,10 +400,10 @@ export default function LearningPage() {
           </p>
           <SmartEnrollment />
         </div>
-      </section>
+      </section> */}
 
       {/* Resource Hub */}
-      <section className="py-16 bg-white" id="resources">
+      {/* <section className="py-16 bg-white" id="resources">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">Resource Hub</h2>
           <p className="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -529,7 +521,7 @@ export default function LearningPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

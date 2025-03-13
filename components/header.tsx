@@ -40,6 +40,7 @@ import {
   Layout,
   LightbulbIcon,
   HandshakeIcon,
+  Phone,
 } from "lucide-react"
 
 // Import the useAuth hook at the top of the file
@@ -520,12 +521,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mt-4">
               <Image
                 src="/logo.png"
                 alt="SnB Alliance Logo"
-                width={180}
-                height={100}
+                width={160}
+                height={120}
                 className=""
                 priority
               />
@@ -559,12 +560,13 @@ export default function Header() {
           {/* Update the Right Side Actions section to show different options when logged in */}
           {/* Replace the existing Right Side Actions div with this: */}
           <div className="flex items-center space-x-3">
-            <Link
-              href="/contact"
-              className="hidden md:inline-flex px-4 py-2 text-sm font-medium border border-gray-200 rounded-md "
-            >
-              Contact Us
-            </Link>
+          <Link
+            href="/contact"
+            className="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border border-gray-200 rounded-md"
+          >
+            <Phone className="h-4 w-4" />
+            Contact Us
+          </Link>
 
             {user ? (
               <div className="hidden md:flex items-center space-x-3">
@@ -583,11 +585,12 @@ export default function Header() {
               </div>
             ) : (
               <Link
-                href="/login"
-                className="hidden md:inline-flex px-4 py-2 text-sm font-medium bg-[#39a3b1] text-white rounded-md hover:bg-teal-dark transition-colors"
-              >
-                Sign In
-              </Link>
+              href="/login"
+              className="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-[#39a3b1] text-white rounded-md hover:bg-teal-700 transition-colors"
+            >
+              <LogIn className="h-4 w-4" />
+              Sign In
+            </Link>
             )}
 
             {/* Mobile menu button */}

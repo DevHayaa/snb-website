@@ -11,7 +11,7 @@ const testimonials = [
     id: 1,
     name: "John Smith",
     role: "Proposal Writer at TechCorp",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/testimonial1.jpeg",
     quote:
       "The CSBA certification completely transformed my career. I gained practical skills that I use every day in my role as a proposal writer. The course was challenging but incredibly rewarding.",
     category: "students",
@@ -21,7 +21,7 @@ const testimonials = [
     id: 2,
     name: "Maria Rodriguez",
     role: "Senior Bid Manager",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/testimonial2.jpeg",
     quote:
       "After completing the CBMP certification, I was promoted to Senior Bid Manager within three months. The program provided me with advanced strategies that have significantly improved our win rate.",
     category: "students",
@@ -31,7 +31,7 @@ const testimonials = [
     id: 3,
     name: "Robert Johnson",
     role: "HR Director at Global Solutions",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/testimonial1.jpeg",
     quote:
       "We've implemented SnB Alliance training across our entire recruitment team. The standardized approach has improved our hiring efficiency by 40% and reduced onboarding time significantly.",
     category: "hr-managers",
@@ -41,7 +41,7 @@ const testimonials = [
     id: 4,
     name: "Jennifer Lee",
     role: "VP of Talent Acquisition",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/testimonial2.jpeg",
     quote:
       "The corporate training program was tailored perfectly to our organization's needs. Our team is now equipped with cutting-edge recruitment strategies that have given us a competitive edge.",
     category: "hr-managers",
@@ -51,7 +51,7 @@ const testimonials = [
     id: 5,
     name: "Michael Chen",
     role: "CEO of BidPro Consulting",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/testimonial1.jpeg",
     quote:
       "As a leader in the bidding industry, I've seen many certification programs, but SnB Alliance stands out for its practical approach and comprehensive curriculum. It's now a requirement for all our new hires.",
     category: "industry-leaders",
@@ -61,7 +61,7 @@ const testimonials = [
     id: 6,
     name: "Sarah Williams",
     role: "Director of Operations",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/testimonial2.jpeg",
     quote:
       "The CSBL certification has been instrumental in helping me develop a strategic approach to our bidding and recruitment operations. The ROI on this investment has been exceptional.",
     category: "industry-leaders",

@@ -9,13 +9,12 @@ export default function MembershipPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src=""
+            src="/membershipBanner.png"
             alt="Abstract geometric background"
             fill
-            className="object-cover"
+            className=""
             priority
           />
-          <div className="absolute inset-0 bg-[#39a3b1]/80 mix-blend-multiply"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -25,7 +24,7 @@ export default function MembershipPage() {
               to you in attaining your career goals.
             </p>
             <Link
-              href="#join"
+              href="/register"
               className="inline-block px-8 py-4 bg-[#f0932a] text-white font-bold rounded-md hover:bg-[#f0932a]/90 transition-colors text-lg"
             >
               Be A Member
@@ -270,6 +269,31 @@ export default function MembershipPage() {
         </div>
       </section> */}
 
+       {/* Join CTA Section */}
+       <section className="py-16 bg-[#39a3b1] text-white" id="join">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Ready to Advance Your Career?</h2>
+            <p className="text-xl mb-8">Join our community of professionals and take your career to the next level.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/register"
+                className="px-8 py-4 bg-[#f0932a] text-white font-bold rounded-md hover:bg-[#f0932a]/90 transition-colors text-lg"
+              >
+                Become a Member
+              </Link>
+              <Link
+                href="/about"
+                className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/30 font-bold rounded-md hover:bg-white/20 transition-colors text-lg"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* Testimonials */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -333,32 +357,8 @@ export default function MembershipPage() {
         </div>
       </section>
 
-      {/* Join CTA Section */}
-      <section className="py-16 bg-[#39a3b1] text-white" id="join">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Advance Your Career?</h2>
-            <p className="text-xl mb-8">Join our community of professionals and take your career to the next level.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/register"
-                className="px-8 py-4 bg-[#f0932a] text-white font-bold rounded-md hover:bg-[#f0932a]/90 transition-colors text-lg"
-              >
-                Become a Member
-              </Link>
-              <Link
-                href="/contact"
-                className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/30 font-bold rounded-md hover:bg-white/20 transition-colors text-lg"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
@@ -367,7 +367,6 @@ export default function MembershipPage() {
 
           <div className="max-w-3xl mx-auto">
             <div className="space-y-6">
-              {/* FAQ Item 1 */}
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">How do I become a member?</h3>
                 <p className="text-gray-600">
@@ -376,7 +375,6 @@ export default function MembershipPage() {
                 </p>
               </div>
 
-              {/* FAQ Item 2 */}
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">What are the benefits of membership?</h3>
                 <p className="text-gray-600">
@@ -385,7 +383,6 @@ export default function MembershipPage() {
                 </p>
               </div>
 
-              {/* FAQ Item 3 */}
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Can I upgrade my membership plan?</h3>
                 <p className="text-gray-600">
@@ -394,7 +391,6 @@ export default function MembershipPage() {
                 </p>
               </div>
 
-              {/* FAQ Item 4 */}
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Is there a corporate membership option?</h3>
                 <p className="text-gray-600">
@@ -405,11 +401,11 @@ export default function MembershipPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Add an "events" section with the correct ID */}
       {/* Add this after the FAQ section */}
-      <section className="py-16 bg-gray-50" id="events">
+      {/* <section className="py-16 bg-gray-50" id="events">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Upcoming Member Events</h2>
@@ -418,7 +414,6 @@ export default function MembershipPage() {
 
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Event 1 */}
               <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
                 <div className="text-[#39a3b1] font-bold mb-2">June 15, 2025</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Networking Mixer</h3>
@@ -431,7 +426,6 @@ export default function MembershipPage() {
                 </div>
               </div>
 
-              {/* Event 2 */}
               <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
                 <div className="text-[#39a3b1] font-bold mb-2">July 10, 2025</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Leadership Workshop</h3>
@@ -444,7 +438,6 @@ export default function MembershipPage() {
                 </div>
               </div>
 
-              {/* Event 3 */}
               <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
                 <div className="text-[#39a3b1] font-bold mb-2">August 5, 2025</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Industry Panel Discussion</h3>
@@ -468,11 +461,11 @@ export default function MembershipPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Add a "stories" section with the correct ID */}
       {/* Add this after the events section */}
-      <section className="py-16 bg-white" id="stories">
+      {/* <section className="py-16 bg-white" id="stories">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Member Success Stories</h2>
@@ -481,7 +474,6 @@ export default function MembershipPage() {
 
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Success Story 1 */}
               <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200">
                 <div className="relative h-48">
                   <Image
@@ -509,7 +501,6 @@ export default function MembershipPage() {
                 </div>
               </div>
 
-              {/* Success Story 2 */}
               <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200">
                 <div className="relative h-48">
                   <Image
@@ -548,7 +539,7 @@ export default function MembershipPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

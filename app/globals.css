@@ -58,9 +58,15 @@
   * {
     @apply border-border;
   }
-  body {
+  /* body {
     @apply w-full overflow-x-hidden text-foreground;
+  } */
+  @layer base {
+    html, body {
+      @apply h-full w-full overflow-x-hidden;
+    }
   }
+  
 }
 
 .hero-section {

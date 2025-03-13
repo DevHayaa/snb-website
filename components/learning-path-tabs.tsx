@@ -15,10 +15,10 @@ export default function LearningPathTabs() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {/* Individuals Section */}
       <div
-        className={`rounded-xl overflow-hidden shadow-lg transition-all duration-300 ${activeTab === "individuals" ? "ring-2 ring-blue-500 transform scale-105" : "opacity-90"}`}
+        className={`rounded-xl overflow-hidden shadow-lg transition-all duration-300 ${activeTab === "individuals" ? "ring-2 ring-white transform scale-105" : "opacity-90"}`}
       >
         <div
-          className="bg-gradient-to-r from-blue-700 to-blue-900 p-6 cursor-pointer"
+          className="bg-[#ec891c] p-6 cursor-pointer"
           onClick={() => setActiveTab("individuals")}
         >
           <div className="flex items-center gap-3">
@@ -30,19 +30,19 @@ export default function LearningPathTabs() {
         <div className="bg-white p-6">
           <div className="flex border-b border-gray-200 mb-6">
             <button
-              className={`px-4 py-2 font-medium ${activeIndividualTab === "self-paced" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-600"}`}
+              className={`px-4 py-2 font-medium ${activeIndividualTab === "self-paced" ? "text-[#ec891c] border-b-2 border-[#ec891c]" : "text-gray-600 hover:text-[#ec891c]"}`}
               onClick={() => setActiveIndividualTab("self-paced")}
             >
               Self-Paced Study
             </button>
             <button
-              className={`px-4 py-2 font-medium ${activeIndividualTab === "instructor-led" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-600"}`}
+              className={`px-4 py-2 font-medium ${activeIndividualTab === "instructor-led" ? "text-[#ec891c] border-b-2 border-[#ec891c]" : "text-gray-600 hover:text-[#ec891c]"}`}
               onClick={() => setActiveIndividualTab("instructor-led")}
             >
               Instructor-Led
             </button>
             <button
-              className={`px-4 py-2 font-medium ${activeIndividualTab === "career-prep" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-600"}`}
+              className={`px-4 py-2 font-medium ${activeIndividualTab === "career-prep" ? "text-[#ec891c] border-b-2 border-[#ec891c]" : "text-gray-600 hover:text-[#ec891c]"}`}
               onClick={() => setActiveIndividualTab("career-prep")}
             >
               Career Prep
@@ -53,7 +53,7 @@ export default function LearningPathTabs() {
             {activeIndividualTab === "self-paced" && (
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <BookOpen className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <BookOpen className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Learn at Your Own Pace</h4>
                     <p className="text-gray-600">
@@ -62,14 +62,14 @@ export default function LearningPathTabs() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <ClipboardCheck className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <ClipboardCheck className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Interactive Assessments</h4>
                     <p className="text-gray-600">Test your knowledge with quizzes, assignments, and practice exams.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <User className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <User className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Personalized Learning Path</h4>
                     <p className="text-gray-600">
@@ -79,7 +79,7 @@ export default function LearningPathTabs() {
                 </div>
                 <Link
                   href="/learning/self-paced"
-                  className="mt-4 inline-block px-6 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
+                  className="mt-4 inline-block px-6 py-2 bg-[#ec891c] text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
                 >
                   Explore Self-Paced Courses
                 </Link>
@@ -89,7 +89,7 @@ export default function LearningPathTabs() {
             {activeIndividualTab === "instructor-led" && (
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <Users className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <Users className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Live Virtual Classes</h4>
                     <p className="text-gray-600">
@@ -98,7 +98,7 @@ export default function LearningPathTabs() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <User className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <User className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Direct Instructor Support</h4>
                     <p className="text-gray-600">
@@ -107,7 +107,7 @@ export default function LearningPathTabs() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <ClipboardCheck className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <ClipboardCheck className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Structured Learning Schedule</h4>
                     <p className="text-gray-600">Follow a set timeline with deadlines to keep you on track.</p>
@@ -115,7 +115,7 @@ export default function LearningPathTabs() {
                 </div>
                 <Link
                   href="/learning/instructor-led"
-                  className="mt-4 inline-block px-6 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
+                  className="mt-4 inline-block px-6 py-2 bg-[#ec891c] text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
                 >
                   View Instructor-Led Programs
                 </Link>
@@ -125,7 +125,7 @@ export default function LearningPathTabs() {
             {activeIndividualTab === "career-prep" && (
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <BookOpen className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <BookOpen className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Career-Focused Curriculum</h4>
                     <p className="text-gray-600">
@@ -134,7 +134,7 @@ export default function LearningPathTabs() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <ClipboardCheck className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <ClipboardCheck className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Resume Building</h4>
                     <p className="text-gray-600">
@@ -143,7 +143,7 @@ export default function LearningPathTabs() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <User className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <User className="h-5 w-5 text-[#ec891c] mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900">Interview Preparation</h4>
                     <p className="text-gray-600">
@@ -153,7 +153,7 @@ export default function LearningPathTabs() {
                 </div>
                 <Link
                   href="/learning/career-prep"
-                  className="mt-4 inline-block px-6 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
+                  className="mt-4 inline-block px-6 py-2 bg-[#ec891c] text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
                 >
                   Explore Career Resources
                 </Link>
@@ -165,7 +165,7 @@ export default function LearningPathTabs() {
 
       {/* Businesses Section */}
       <div
-        className={`rounded-xl overflow-hidden shadow-lg transition-all duration-300 ${activeTab === "businesses" ? "ring-2 ring-blue-500 transform scale-105" : "opacity-90"}`}
+        className={`rounded-xl overflow-hidden shadow-lg transition-all duration-300 ${activeTab === "businesses" ? "ring-2 ring-white transform scale-105" : "opacity-90"}`}
       >
         <div
           className="bg-gradient-to-r from-teal-700 to-teal-900 p-6 cursor-pointer"

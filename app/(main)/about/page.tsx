@@ -85,28 +85,32 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 min-h-[80vh]">
-        <div className="absolute inset-0 overflow-hidden">
-          <Image
-            src="/aboutBanner.png"
-            alt="Team collaboration"
-            fill
-            className="object-cover w-full h-full"
-            priority
-          />
-        </div>
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-xl">
-            
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">WHO WE ARE</h1>
-            <p className="text-xl text-white/90">
-              SnB Alliance is a non-profit organization dedicated to setting standards and providing certifications in
-              the bidding and recruitment industries. Through our comprehensive programs and resources, we empower
-              professionals to excel in their careers.
-            </p>
-          </div>
-        </div>
-      </section>
+      <section className="relative py-20 min-h-[80vh] flex items-center bg-[#007b8f] md:bg-transparent">
+  {/* Background Image - Visible Only on Medium & Larger Screens */}
+  <div className="inset-0 overflow-hidden hidden md:block">
+    <div className=" inset-0 bg-black/50" /> {/* Dark overlay for contrast */}
+    <Image
+      src="/aboutBanner.png"
+      alt="Team collaboration"
+      fill
+      className="object-cover w-full h-full"
+      priority
+    />
+  </div>
+
+  {/* Content Wrapper */}
+  <div className="relative container mx-auto px-6 md:px-12">
+    <div className="max-w-2xl text-center md:text-left">
+      <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">WHO WE ARE</h1>
+      <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+        SnB Alliance is a non-profit organization dedicated to setting standards and providing 
+        certifications in the bidding and recruitment industries. Through our comprehensive programs 
+        and resources, we empower professionals to excel in their careers.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Mission & Vision Section */}
       <section className="py-16 bg-white" id="mission-vision">
