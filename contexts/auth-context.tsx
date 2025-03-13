@@ -73,7 +73,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       // For demo purposes, accept any valid inputs
       if (name && email && password.length >= 6) {
-        const user = {
+        const user: User = {
           id: "1",
           name,
           email,
